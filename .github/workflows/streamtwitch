@@ -1,0 +1,137 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
+<html lang="eu">
+
+<head>
+   <title>lepaparoh.tv</title>
+
+
+   <style>
+      div {
+         background-color: rgb(83, 32, 204);
+
+      }
+
+      h1 {
+         font-style: italic;
+         margin: 30px;
+      }
+
+      body {
+         padding-top: 20px;
+         text-align: center;
+         background-color: rgb(0, 0, 5);
+      }
+
+      img {
+         width: 500px;
+         border: solid 5px white
+      }
+
+      #twitch {
+         background-color: blue;
+         padding: 12px 20px;
+         color: white;
+         text-decoration: none;
+         text-transform: uppercase;
+         text-align: center;
+      }
+
+      p {
+         color: rgb(252, 253, 253);
+         margin: 30px auto 0;
+         max-width: 750;
+         size: 5px;
+      }
+
+      ul {
+         list-style: none;
+         padding: 0;
+         color: black;
+      }
+
+      li {
+         display: inline;
+         box-shadow: none;
+
+      }
+
+      a {
+         color: aliceblue;
+         background-color: blue;
+         font-weight: 750;
+         text-decoration: none;
+         font-size: medium;
+         padding: 8px 17px;
+      }
+   </style>
+
+</head>
+
+<body>
+
+   <img
+      src="https://scontent.fsxb1-1.fna.fbcdn.net/v/t1.6435-9/69536050_114419399932337_7105329444776050688_n.png?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=M0USbzSFyDUAX8tGf1j&_nc_ht=scontent.fsxb1-1.fna&oh=00_AfD82r4vbWNQm4jnKr2rPihnxtCKOHjS5wMm7qe1JNGung&oe=6499E83E"
+      height="200px" alt="lepaparoh">
+
+   <div>
+      <h1>lepaparoh.tv</h1>
+   </div>
+
+   <a id="twitch" href="https://www.twitch.tv/lepaparoh">twitch</a>
+
+
+
+   <p>Salut tous le monde .Je suis un streamer qui aime partager ma passion pour les jeux vidéo. <br>
+      Ici vous ne trouverez pas de champion ni même les meilleurs skill, mais vous aurez de la <br>
+      joie et de la bonne humeur en espérant vous retrouver très vite sur mon Stream. </p>
+
+   <ul>
+      <li><a href="https://www.facebook.com/lepaparoh">facebook</a></li>
+      <li><a href="https://www.instagram.com/lepaparoh/">instagram</a></li>
+      <li><a href="https://twitter.com/LePapaRoh">twitter</a></li>
+
+   </ul>
+
+
+
+
+
+</body>
+
+</html>
